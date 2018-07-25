@@ -1,0 +1,256 @@
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300i,300|Roboto+Slab|Roboto:100,300,400,600,900|Shrikhand'
+  
+$font-stack-logo: 'Shrikhand', cursive
+$font-stack: 'Merriweather', serif;
+$font-stack-header: 'Roboto', sans-serif
+$color-primary: #EF3340
+$color-secondary: #2ad2c9
+$color-base: #2D2926
+$color-base-sub: #444
+$color-white: #FFF
+
+.header
+  background-color: $color-white
+  color: $color-base
+  z-index: 1
+  width: 100vw
+  height: auto
+  position: fixed
+  top: 0
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.12)
+  .header-container
+    max-width: 1290px
+    margin: auto
+    display: flex
+    justify-content: space-between
+  .logo
+    width: 300px
+    height: 60px
+    text-align: center
+    position: absolute
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    a 
+      text-decoration: none
+    h1
+      font: 100% $font-stack-logo
+      line-height: 3.5rem
+      text-transform: capitalize
+      font-size: 1.75rem
+      letter-spacing: 1.5px
+      color: $color-base-sub
+  .site-navigation
+    margin: 0
+    padding: 0
+    list-style: none
+    float: left
+  li 
+    cursor: pointer
+    display: inline-block
+    position: relative
+    vertical-align: top
+    a 
+      font-family: $font-stack-header
+      color: $color-base-sub
+      font-weight: 300
+      font-size: .85rem
+      line-height: 1rem
+      letter-spacing: 1px
+      text-transform: uppercase
+      display: inline-block
+      padding: 1.375rem .75rem 1.286rem
+      text-decoration: none
+      i 
+        margin-right: 5px
+    a:hover 
+      color: $color-secondary
+    a.active 
+      color: $color-secondary
+  .search
+    margin: 0 12px 0 0
+    padding: 0
+    list-style: none
+    float: right
+
+.site-navigation-bottom
+  display: none
+
+.home
+  margin-top: 105px
+  .recipe
+    margin-bottom: 1rem
+    flex-direction: row-reverse
+  .recipe-img-container
+    border-radius: .1rem
+    height: 170px
+    overflow: hidden
+    margin-bottom: 1rem
+  .hero-img
+    height: 360px
+  .recipe-img 
+    width: 100%
+    height: auto
+  .recipe-sub
+    height: auto
+  .recipe-sub-hero
+    display: flex
+    flex-direction: column
+    border-radius: .1rem
+    h1 
+      font-weight: 900
+  .recipe-links
+    opacity: .8
+    align-items: center
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  .share
+    margin-bottom: 4px
+  i
+    margin: 0 24px 2px 0
+  a 
+    color: $color-base
+    font-family: $font-stack-header
+    text-transform: capitalize
+    font-weight: 900
+  a:hover  
+    color: $color-secondary
+    text-decoration: none
+  h2
+    font: 100% $font-stack-header
+    // border-bottom: .5rem solid $color-secondary
+    letter-spacing: .15rem
+    text-transform: capitalize
+    font-size: 1.5em
+    font-weight: 800
+  .date
+    font: 100% $font-stack
+    font-style: italic
+    color: $color-base
+    opacity: .6
+    font-size: .9em
+    font-weight: 500
+  .description
+    font: 100% $font-stack-header
+    color: $color-base-sub
+    font-size: .9em
+    font-weight: 300
+  .social
+    text-align: center
+    padding: 12px
+    border: 2px solid $color-primary
+    border-radius: .2rem
+  .social a 
+    font-size: 1.3em
+    color: $color-base
+    opacity: .8
+    margin: 8px
+
+
+.btn-read-more
+  font-family: $font-stack-header
+  background-color: transparent
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  user-select: none
+  font-size: 1rem
+  line-height: 1.5
+.btn-read-more:hover
+  color: $color-primary
+  text-decoration: none
+
+.footer
+  background-color: $color-base
+  color: $color-white
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  height: 80px
+.footer h1
+  margin: auto 48px;
+.follow
+  align-items: center;
+  justify-content: center;
+  display: flex 
+  margin: auto 48px;
+  flex-direction: row
+  div
+    margin-right: 14px
+    font-size: 1.2rem
+    font-family: $font-stack
+    font-style: italic
+    text-transform: capitalize
+  a 
+    margin: 0 12px
+    font-size: 1.5em
+    color: $color-secondary
+  a:hover 
+    color: $color-primary
+
+@media screen and (max-width: 992px) 
+  .home 
+    margin-top: 70px
+    .hero
+      display: none
+    .recipe
+      display: block !important
+    .recipe-img-container
+      height: 320px
+    .recipe-sub
+      margin-top: 24px
+
+  .footer
+    flex-direction: column
+    h1 
+      margin: auto
+    .follow
+      margin: auto
+
+@media screen and (max-width: 768px) 
+  .header
+    span 
+      display: none
+
+@media screen and (max-width: 575px) 
+  .site-navigation
+    display: none
+  .site-navigation-bottom
+    background: white
+    width: 100%
+    position: fixed
+    bottom: 0
+    top: auto
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.12)
+    margin: 0
+    padding: 0
+    list-style: none
+    float: left
+  li 
+    cursor: pointer
+    display: inline-block
+    position: relative
+    vertical-align: top
+    a 
+      text-decoration: none
+      font-family: $font-stack-header
+      color: $color-base-sub
+      font-weight: 300
+      font-size: 1rem
+      line-height: 1rem
+      letter-spacing: 1px
+      text-transform: uppercase
+      display: inline-block
+      padding: 1.375rem .75rem 1.286rem
+      text-decoration: none
+      i 
+        margin-right: 5px
+    a:hover 
+      color: $color-secondary
+    a.active 
+      color: $color-secondary
+
+

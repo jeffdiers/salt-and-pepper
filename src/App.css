@@ -1,0 +1,243 @@
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300i,300|Roboto+Slab|Roboto:100,300,400,600,900|Shrikhand';
+.header {
+  background-color: #FFF;
+  color: #2D2926;
+  z-index: 1;
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12); }
+  .header .header-container {
+    max-width: 1290px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+  .header .logo {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%); }
+    .header .logo a {
+      text-decoration: none; }
+    .header .logo h1 {
+      font: 100% "Shrikhand", cursive;
+      line-height: 3.5rem;
+      text-transform: capitalize;
+      font-size: 1.75rem;
+      letter-spacing: 1.5px;
+      color: #444; }
+  .header .site-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left; }
+  .header li {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top; }
+    .header li a {
+      font-family: "Roboto", sans-serif;
+      color: #444;
+      font-weight: 300;
+      font-size: .85rem;
+      line-height: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 1.375rem .75rem 1.286rem;
+      text-decoration: none; }
+      .header li a i {
+        margin-right: 5px; }
+    .header li a:hover {
+      color: #2ad2c9; }
+    .header li a.active {
+      color: #2ad2c9; }
+  .header .search {
+    margin: 0 12px 0 0;
+    padding: 0;
+    list-style: none;
+    float: right; }
+
+.site-navigation-bottom {
+  display: none; }
+
+.home {
+  margin-top: 105px; }
+  .home .recipe {
+    margin-bottom: 1rem;
+    flex-direction: row-reverse; }
+  .home .recipe-img-container {
+    border-radius: .1rem;
+    height: 170px;
+    overflow: hidden;
+    margin-bottom: 1rem; }
+  .home .hero-img {
+    height: 360px; }
+  .home .recipe-img {
+    width: 100%;
+    height: auto; }
+  .home .recipe-sub {
+    height: auto; }
+  .home .recipe-sub-hero {
+    display: flex;
+    flex-direction: column;
+    border-radius: .1rem; }
+    .home .recipe-sub-hero h1 {
+      font-weight: 900; }
+  .home .recipe-links {
+    opacity: .8;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .home .share {
+    margin-bottom: 4px; }
+  .home i {
+    margin: 0 24px 2px 0; }
+  .home a {
+    color: #2D2926;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    font-weight: 900; }
+  .home a:hover {
+    color: #2ad2c9;
+    text-decoration: none; }
+  .home h2 {
+    font: 100% "Roboto", sans-serif;
+    letter-spacing: .15rem;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 800; }
+  .home .date {
+    font: 100% "Merriweather", serif;
+    font-style: italic;
+    color: #2D2926;
+    opacity: .6;
+    font-size: .9em;
+    font-weight: 500; }
+  .home .description {
+    font: 100% "Roboto", sans-serif;
+    color: #444;
+    font-size: .9em;
+    font-weight: 300; }
+  .home .social {
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #EF3340;
+    border-radius: .2rem; }
+  .home .social a {
+    font-size: 1.3em;
+    color: #2D2926;
+    opacity: .8;
+    margin: 8px; }
+
+.btn-read-more {
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.btn-read-more:hover {
+  color: #EF3340;
+  text-decoration: none; }
+
+.footer {
+  background-color: #2D2926;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px; }
+
+.footer h1 {
+  margin: auto 48px; }
+
+.follow {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto 48px;
+  flex-direction: row; }
+  .follow div {
+    margin-right: 14px;
+    font-size: 1.2rem;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    text-transform: capitalize; }
+  .follow a {
+    margin: 0 12px;
+    font-size: 1.5em;
+    color: #2ad2c9; }
+  .follow a:hover {
+    color: #EF3340; }
+
+@media screen and (max-width: 992px) {
+  .home {
+    margin-top: 70px; }
+    .home .hero {
+      display: none; }
+    .home .recipe {
+      display: block !important; }
+    .home .recipe-img-container {
+      height: 320px; }
+    .home .recipe-sub {
+      margin-top: 24px; }
+  .footer {
+    flex-direction: column; }
+    .footer h1 {
+      margin: auto; }
+    .footer .follow {
+      margin: auto; } }
+
+@media screen and (max-width: 768px) {
+  .header span {
+    display: none; } }
+
+@media screen and (max-width: 575px) {
+  .site-navigation {
+    display: none; }
+  .site-navigation-bottom {
+    background: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left; }
+  li {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: top; }
+    li a {
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      color: #444;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 1.375rem .75rem 1.286rem;
+      text-decoration: none; }
+      li a i {
+        margin-right: 5px; }
+    li a:hover {
+      color: #2ad2c9; }
+    li a.active {
+      color: #2ad2c9; } }
