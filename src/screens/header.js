@@ -14,13 +14,13 @@ class Header extends Component {
           <div>
             <ul className="site-navigation">
               <li><Link to="/"><i className="fas fa-home"></i><span>home</span></Link></li>
-              <li><a href="#"><i className="fas fa-play"></i><span>videos</span></a></li>
-              <li><a href="#"><i className="fas fa-utensils"></i><span>recipes</span></a></li>
+              <li><a href="/"><i className="fas fa-play"></i><span>videos</span></a></li>
+              <li><a href="/"><i className="fas fa-utensils"></i><span>recipes</span></a></li>
             </ul>
           </div>
           <div>
             <ul className="search">
-              <li><a href="#"><i className="fas fa-search"></i><span>search</span></a></li>
+              <li><a href="/"><i className="fas fa-search"></i><span>search</span></a></li>
             </ul>
           </div>
         </div>

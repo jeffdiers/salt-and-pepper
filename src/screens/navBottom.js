@@ -7,9 +7,9 @@ class NavBottom extends Component {
     return (
       <div>
         <ul className="site-navigation-bottom">
-          <li><a href="#" className="active"><i className="fas fa-home"></i></a></li>
-          <li><a href="#"><i className="fas fa-play"></i></a></li>
-          <li><a href="#"><i className="fas fa-utensils"></i></a></li>
+          <li><a href="/" className="active"><i className="fas fa-home"></i></a></li>
+          <li><a href="/"><i className="fas fa-play"></i></a></li>
+          <li><a href="/"><i className="fas fa-utensils"></i></a></li>
         </ul>
       </div>
     );

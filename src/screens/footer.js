@@ -8,7 +8,7 @@ class Footer extends Component {
       <div className="footer">
         <h1 className="logo">salt & pepper</h1>
         <div className="follow">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="/"><i class="fab fa-instagram"></i></a>
           <div>follow us on instagram</div>
         </div>
       </div>

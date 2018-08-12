@@ -4,10 +4,6 @@ import '../App.css';
 
 class Article extends Component {
 
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     const { slug } = this.props.match.params
     return (
